@@ -1,0 +1,6 @@
+:root {
+    --color1: hsl(red);
+    --color2: hsl(blue);
+    --color3: hsl(green);
+}
+/* Change colors for lighter and hsl color matching. also, make one of the theme colors white or not? */
