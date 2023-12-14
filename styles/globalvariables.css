@@ -1,6 +1,6 @@
 :root {
-    --color1: hsl(red);
-    --color2: hsl(blue);
-    --color3: hsl(green);
+    --color1: hsla(0, 74%, 46%);
+    --color2: hsl(221 67% 52%);
+    --color3: hsl(0 0% 96%);
 }
 /* Change colors for lighter and hsl color matching. also, make one of the theme colors white or not? */
