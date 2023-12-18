@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 * {
     margin: 0;
@@ -8,9 +9,48 @@
 
 html, body {
     height: 100%;
-    font-family: 'Roboto';
+    
     font-weight: 900;
     color: white;
+    
+    overflow: hidden;
+}
+
+header {
+    height: 30vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-bottom: 0.25vmin solid var(--color2);
+}
+header>img {
+    filter: blur(1.5px);
+    
+    object-fit: cover;
+    
+    width: 100%;
+    height: 100%;
+}
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px var(--color2);
+    
+    position: absolute;
+
+    line-height: 2ch;
+
+    font-size: clamp(2vw, 6.5vw, 8vmin);
+    font-family: 'Bungee Inline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    letter-spacing: 0.1ch;
+}
+.title>p {
+    letter-spacing: 0.4ch;
+    font-size: clamp(1vw, 2.5vw, 4vmin);
 }
 
 nav {
@@ -26,7 +66,8 @@ nav {
     border-bottom: none;
     border-radius: 4vmin 4vmin 0vmin 0vmin;
 
-    font-size: clamp(1vw, 2.5vw, 5vmin);
+    font-size: clamp(1vw, 2.5vw, 4vmin);
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     display: flex;
     align-items: center;
@@ -69,3 +110,16 @@ nav {
 .dropup:hover button {
     background-color: var(--color2);
 }
+nav>a {
+    align-self: flex-end;
+    height: 100%;
+    width: min-content;
+    display: flex;
+    align-items: end;
+}
+.logo {
+    width: auto;
+    height: 12vh;
+    transform: rotate(-0.75deg);
+}
+/* fix image and align to bottom, svg -> png, remove rotate */
